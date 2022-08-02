@@ -18,7 +18,7 @@
     --fc-input: #7C7C8A;
     --fc-link-light: #E1E1E6;
 
-    --border-color: hsla(191, 31%, 42%, 1);
+    --border-color: hsla(191, 31%, 42%, .8);
 
     
     font-size: 62.5%;
@@ -31,4 +31,10 @@ body {
 a {
     text-decoration: none;
     color: var(--fc-primary);
+}
+tr {
+    border-top: 1px solid var(--border-color);
+}
+thead tr:first-child {
+    border-top: none;
 }

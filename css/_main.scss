@@ -1,6 +1,8 @@
 .main {
     max-width: 112rem;
-    height: 68.8rem;
-    overflow: auto;
+    max-height: 68.8rem;
+    overflow: overlay;
     scroll-behavior: smooth;
+    border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+    border: 1px solid var(--border-color);
 }

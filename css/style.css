@@ -16,7 +16,7 @@
   --fc-secondary: #F75A68;
   --fc-input: #7C7C8A;
   --fc-link-light: #E1E1E6;
-  --border-color: hsla(191, 31%, 42%, 1);
+  --border-color: hsla(191, 31%, 42%, .8);
   font-size: 62.5%;
 }
 
@@ -29,6 +29,14 @@ body {
 a {
   text-decoration: none;
   color: var(--fc-primary);
+}
+
+tr {
+  border-top: 1px solid var(--border-color);
+}
+
+thead tr:first-child {
+  border-top: none;
 }
 
 .wrapper {
@@ -49,7 +57,6 @@ a {
   align-items: center;
   gap: 8px;
   max-width: 64rem;
-  height: 4.8rem;
 }
 .header-search-input {
   width: 46.2rem;
@@ -92,9 +99,11 @@ a {
 
 .main {
   max-width: 112rem;
-  height: 68.8rem;
-  overflow: auto;
+  max-height: 68.8rem;
+  overflow: overlay;
   scroll-behavior: smooth;
+  border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+  border: 1px solid var(--border-color);
 }
 
 .sr-only {
@@ -112,7 +121,6 @@ a {
 .favorites {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 10rem;
 }
 .favorites thead tr {
   background-color: var(--bg-header-table);
@@ -129,10 +137,7 @@ a {
   font-weight: 700;
 }
 .favorites thead tr th:first-child {
-  border-radius: 1.2rem 0 0 0;
-}
-.favorites thead tr th:last-child {
-  border-radius: 0 1.2rem 0 0;
+  width: max(20vw, 500px);
 }
 .favorites thead tr th td {
   margin: 1.6rem 0 1.6rem 4rem;
@@ -174,6 +179,9 @@ a {
   font-weight: 700;
   cursor: pointer;
 }
+.favorites tbody .favorites--noborder {
+  border-top: none;
+}
 .favorites .no-favorites {
   display: flex;
   align-items: center;
@@ -203,5 +211,5 @@ a {
 
 .main::-webkit-scrollbar-thumb {
   background: #4A808C;
-  border-radius: 5px;
+  border-radius: 12px;
 }/*# sourceMappingURL=style.css.map */
