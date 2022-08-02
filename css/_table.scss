@@ -1,6 +1,7 @@
 .favorites {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 10rem;
     thead {
         tr {
             background-color: var(--bg-header-table);
@@ -70,5 +71,26 @@
                 }
             }
         }
+    }
+    .no-favorites {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 62.4rem;
+        gap: 6rem;
+        img {
+            width: 13.2rem;
+        }
+        span {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 25px;
+            display: flex;
+            align-items: flex-end;
+            color: #4E5455;
+        }
+    }
+    .hide {
+        display: none;
     }
 }
