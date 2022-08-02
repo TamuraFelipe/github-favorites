@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-body: #000;
+    --bg-light: #fff;
+    --bg-textField: #06181C;
+    --bg-header-table: #092D38;
+    --bg-dark-row: rgba(6, 22, 27, 0.5);
+    --bg-light-row: #06181C;
+
+    --set-btn: #065E7C;
+    
+    --fc-primary: #fff;
+    --fc-secondary: #F75A68;
+    --fc-input: #7C7C8A;
+    --fc-link-light: #E1E1E6;
+
+    --border-color: hsla(191, 31%, 42%, 1);
+
+    
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    background-color: var(--bg-body);
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: var(--fc-primary);
+}

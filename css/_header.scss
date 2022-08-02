@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8.7rem;
+    &-search {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        max-width: 64rem;
+        height: 4.8rem;
+        &-input {
+            width: 46.2rem;
+            height: 4.8rem;
+            color: var(--fc-input);
+            font-size: 1.6rem;
+            padding: 1.6rem;
+            display: inline-block;
+            background-color: var(--bg-textField);
+            border: none;
+            border-radius: 5px;
+            &:focus {
+                outline: none;
+                border: none;
+            }
+        }
+        &-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 17rem;
+            height: 4.8rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--fc-primary);
+            border: none;
+            background: var(--set-btn);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 300ms;
+            &:hover {
+                color: var(--set-btn);
+                background-color: var(--bg-light);
+            }
+            &:hover svg path {
+                fill: var(--set-btn);
+            }
+        }
+    }
+}
