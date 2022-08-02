@@ -92,6 +92,9 @@ a {
 
 .main {
   max-width: 112rem;
+  height: 68.8rem;
+  overflow: auto;
+  scroll-behavior: smooth;
 }
 
 .sr-only {
@@ -191,4 +194,14 @@ a {
 }
 .favorites .hide {
   display: none;
+}
+
+.main::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background: #4A808C;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
