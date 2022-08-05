@@ -1,4 +1,4 @@
-<h2>Rocket NFT´s</h2>
+<h2>GitFav</h2>
 
 <div align="center">
   <img width="600" src="./imagem/capa.png"/>
