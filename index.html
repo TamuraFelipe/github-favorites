@@ -6,13 +6,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Definindo Projeto</title>
+    <title>GitFav</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="js/main.js" type="module" defer></script>
 </head>
 <body>
     <div class="wrapper">
-        
+       <div id="app">
         <header class="header">
             <img src="imagem/logo.svg" alt="Logo GitFav">
             <div class="header-search">
@@ -28,6 +29,7 @@
         </header>
     
         <main class="main">
+            
             <table class="favorites">
                 <thead>
                     <tr>
@@ -37,23 +39,10 @@
                         <th>Action</th>
                     </tr>
                 </thead>
-                <tbody class="">
-                    <tr class="favorites--noborder">
-                        <td class="user">
-                            <img src="https://www.github.com/tamurafelipe.png" alt="Imagem do usuário">
-                            <a class="user-link" href="https://www.github.com/tamurafelipe">
-                                <p>Felipe Tamura</p>
-                                <span class="user-link--light">/tamurafelipe</span>
-                            </a>
-                        </td>
-                        <td class="repositories">123</td>
-                        <td class="followers">12</td>
-                        <td class="action">
-                            <button class="action-remove">Remover</button>
-                        </td>
-                    </tr>
+                <tbody class="" id="onResults">
+                    
                 </tbody>
-                <tbody class="hide">
+                <tbody class="hide" id="ofResults">
                     <tr>
                         <td colspan="4">
                             <div class="no-favorites">
@@ -64,8 +53,10 @@
                     </tr>
                 </tbody>
             </table>
+
         </main>
+       </div>       
     </div>
-    <script src="js/main.js"></script>
+    
 </body>
 </html>

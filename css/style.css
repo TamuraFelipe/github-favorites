@@ -50,13 +50,17 @@ thead tr:first-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 3.2rem;
+  flex-wrap: wrap;
   margin-bottom: 8.7rem;
 }
 .header-search {
   display: flex;
   align-items: center;
   gap: 8px;
-  max-width: 64rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex: 1 1 260px;
 }
 .header-search-input {
   width: 46.2rem;
@@ -186,7 +190,7 @@ thead tr:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 62.4rem;
+  height: 58.4rem;
   gap: 6rem;
 }
 .favorites .no-favorites img {
