@@ -1,4 +1,4 @@
-<h2>GithubFav</h2>
+<h2>GitFavorites</h2>
 
 <div align="center">
   <img width="600" src="./imagem/capa.png"/>
